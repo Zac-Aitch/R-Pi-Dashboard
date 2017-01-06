@@ -98,13 +98,13 @@ div.right p {
 	font-size: 100px;
 
 }
-table{
+table {
 	text-align: left;
 	margin: auto;
 	
 }
 
-td{
+td {
 	font-family: 'Catamaran', sans-serif;
 	font-weight: thin;
 	color: white;
@@ -112,9 +112,9 @@ td{
 	vertical-align: text-top;
 }
 
-.twitter-timeline{
+.twitter-timeline {
 	height: 200px;
 	width: 100px;
 	margin: auto;
-
+}
 
