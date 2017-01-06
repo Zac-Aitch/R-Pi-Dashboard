@@ -1,0 +1,120 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+
+	height: 600px;
+	width: 950px;
+	background-color: black;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.group {
+
+	height: 500px;
+	width: 800px;
+	background-color: black;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	
+}
+
+.left {
+	height: 250px;
+	width: 250px;
+	float: left;
+	background-color: black;
+	
+}
+
+.right {
+	height: 250px;
+	width: 400px;
+	
+	float: right;
+	background-color: black;
+	color: white;
+	text-align: center;
+
+}
+
+
+h1 {
+	font-family: 'Catamaran', sans-serif;
+	color: white;
+	text-align: center;
+	margin: auto;
+	vertical-align: text-top;
+	line-height: 50px;
+}
+
+#richmond {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: bolder;
+	color: white;
+	text-align: center;
+
+}
+
+div.left p {
+	font-family: 'Catamaran', sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 160px;
+	margin: auto;
+}
+
+
+div.right p {
+	font-family: 'Catamaran', sans-serif;
+	color: white;
+
+
+}
+
+#grid {
+	height: 150px;
+	width: 250px;
+	float: left;
+	background-color: black;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	vertical-align: text-top;
+	font-family: 'Bungee', cursive;
+	font-weight: thin;
+	font-size: 100px;
+
+}
+table{
+	text-align: left;
+	margin: auto;
+	
+}
+
+td{
+	font-family: 'Catamaran', sans-serif;
+	font-weight: thin;
+	color: white;
+	line-height: 10px;
+	vertical-align: text-top;
+}
+
+.twitter-timeline{
+	height: 200px;
+	width: 100px;
+	margin: auto;
+
+
