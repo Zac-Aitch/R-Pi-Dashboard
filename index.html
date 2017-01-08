@@ -143,7 +143,25 @@
 
 	<tr>
 		<td>Bus</td>
-	<script>
+		<td id ="bus">
+	
+			<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						function update(){
+					  $.ajax({
+					  url : "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=sf-muni&r=1&s=3840",
+					  dataType : "xml",
+					  success: function(xml) {
+					  var time = pjson['prediction'];
+					  
+					  $('#bus').html(time);
+					  	}
+					  });
+					  }
+					setInterval(update, 600000);
+			  		update();
+					});
+
 	/*
 	function loadDoc() {
   		var xhttp = new XMLHttpRequest();
@@ -158,7 +176,7 @@
 	}
 	*/
 
-
+/*
 	function loadDoc() {
   		var xhttp = new XMLHttpRequest();
   		xhttp.onreadystatechange = function() {
@@ -184,13 +202,15 @@
   	}
   	document.getElementById("right").innerHTML = predict;
 	}
-
+*/
 	//Twitter feed	
 	/*
 	<a class="twitter-timeline" data-lang="en" data-width="300" data-height="500" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/BreakingNews">Tweets by BreakingNews</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8">
 	*/
+		</script>
+	</td>
+	</tr>
 	
-	</script>
 	
 	
 </div>
