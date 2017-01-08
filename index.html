@@ -127,8 +127,55 @@
 	
 </div>
 <div id="right" class ="right">
-		
-	<a class="twitter-timeline" data-lang="en" data-width="300" data-height="500" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/BreakingNews">Tweets by BreakingNews</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	<script>
+	/*
+	function loadDoc() {
+  		var xhttp = new XMLHttpRequest();
+  		xhttp.onreadystatechange = function() {
+    		if (this.readyState == 4 && this.status == 200) {
+      			document.getElementById("demo").innerHTML =
+      			this.responseText;
+    		}
+  		};
+  	xhttp.open("GET", "http://webservices.nextbus.com/service/publicXMLFeed?command=schedule&a=sf-muni&stopId=&r=1&s=3840", true);
+  	xhttp.send();
+	}
+	*/
+
+
+	function loadDoc() {
+  		var xhttp = new XMLHttpRequest();
+  		xhttp.onreadystatechange = function() {
+    	if (this.readyState == 4 && this.status == 200) {
+    	myFunction(this);
+    	}
+  	};
+  	xhttp.open("GET", "cd_catalog.xml", true);
+  	xhttp.send();
+	}
+	function myFunction(xml) {
+  		var i;
+  		var xmlDoc = xml.responseXML;
+  		var table="<tr><th>Artist</th><th>Title</th></tr>";
+  		var x = xmlDoc.getElementsByTagName("CD");
+  		for (i = 0; i <x.length; i++) { 
+    		table += "<tr><td>" +
+    		x[i].getElementsByTagName("vehicle")[0].childNodes[0].nodeValue +
+    		"</td><td>" +
+    		x[i].getElementsByTagName("minutes")[0].childNodes[0].nodeValue +
+    		"</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+
+	//Twitter feed	
+	/*
+	<a class="twitter-timeline" data-lang="en" data-width="300" data-height="500" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/BreakingNews">Tweets by BreakingNews</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8">
+	*/
+	
+	</script>
+	
 	
 </div>
 </div>
