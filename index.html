@@ -151,10 +151,8 @@
 					  $.ajax({
 					  url : "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=sf-muni&r=1&s=3840",
 					  dataType : "xml",
-					  success: function(xml) {
-					  var time = pjson['prediction'];
-					  
-					  $('#bus').html(time);
+					  success: function(data) {
+					  	console.log(data.responseText)
 					  	}
 					  });
 					  }
