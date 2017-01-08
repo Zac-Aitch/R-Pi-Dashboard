@@ -152,13 +152,11 @@
 					  url : "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=sf-muni&r=1&s=3840",
 					  dataType : "xml",
 					  success: function(data) {
-					  	console.log(data.responseText)
+					  	console.log(data);
 					  	}
 					  });
-					  }
-					setInterval(update, 600000);
-			  		update();
-					});
+					}
+		
 
 	/*
 	function loadDoc() {
