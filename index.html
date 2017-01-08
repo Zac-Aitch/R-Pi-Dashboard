@@ -151,14 +151,14 @@
     	myFunction(this);
     	}
   	};
-  	xhttp.open("GET", "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=sf-muni&stopId=&r=1&s=3840", true);
+  	xhttp.open("GET", "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=sf-muni&r=1&s=3840", true);
   	xhttp.send();
 	}
 	function myFunction(xml) {
   		var i;
   		var xmlDoc = xml.responseXML;
   		var table="<tr><th>Bus</th><th>Minutes</th></tr>";
-  		var x = xmlDoc.getElementsByTagName("CD");
+  		var x = xmlDoc.getElementsByTagName("prediction");
   		for (i = 0; i <x.length; i++) { 
     		table += "<tr><td>" +
     		x[i].getElementsByTagName("vehicle")[0].childNodes[0].nodeValue +
