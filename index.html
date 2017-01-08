@@ -41,7 +41,7 @@
 		<div id="grid">
 			
 			<script type="text/javascript">
-			
+			/*
 			jQuery(document).ready(function($) {
 				function update(){
 			  $.ajax({
@@ -144,7 +144,8 @@
 	
 </div>
 <div id="right" class ="right">
-
+<h2 id="nextBus">Next Bus:</h2>
+<h2 id="time"></h2>
 	<tr>
 		<td>Bus</td>
 		<td id ="bus">
@@ -160,7 +161,7 @@
 					  	var x = data.getElementsByTagName("prediction")[0];
 					  	var txt = x.getAttribute("minutes");
 					  	console.log(txt);
-					  	document.getElementById("right").innerHTML = txt;
+					  	document.getElementById("time").innerHTML = txt + "minutes";
 					  	//var txt = x.getAttribute('minutes');
 					  	
 					  	/*
@@ -177,54 +178,6 @@
 					  	}
 					  });
 
-					
-		
-
-	/*
-	function loadDoc() {
-  		var xhttp = new XMLHttpRequest();
-  		xhttp.onreadystatechange = function() {
-    		if (this.readyState == 4 && this.status == 200) {
-      			document.getElementById("demo").innerHTML =
-      			this.responseText;
-    		}
-  		};
-  	xhttp.open("GET", "http://webservices.nextbus.com/service/publicXMLFeed?command=schedule&a=sf-muni&stopId=&r=1&s=3840", true);
-  	xhttp.send();
-	}
-	*/
-
-/*
-	function loadDoc() {
-  		var xhttp = new XMLHttpRequest();
-  		xhttp.onreadystatechange = function() {
-    	if (this.readyState == 4 && this.status == 200) {
-    	myFunction(this);
-    	}
-  	};
-  	xhttp.open("GET", "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=sf-muni&r=1&s=3840", true);
-  	xhttp.send();
-	}
-	function myFunction(xml) {
-  		var i;
-  		var xmlDoc = xml.responseXML;
-  		var predict="<tr><th>Bus</th><th>Minutes</th></tr>";
-  		var x = xmlDoc.getElementsByTagName("direction");
-  		for (i = 0; i <x.length; i++) { 
-    		predict += "<tr><td>" +
-    		x[i].getElementsByTagName("VEHICLE")[0].childNodes[0].nodeValue +
-    		"</td><td>" +
-    		x[i].getElementsByTagName("MINUTES")[0].childNodes[0].nodeValue +
-    		"</td></tr>";
-    	
-  	}
-  	document.getElementById("right").innerHTML = predict;
-	}
-*/
-	//Twitter feed	
-	/*
-	<a class="twitter-timeline" data-lang="en" data-width="300" data-height="500" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/BreakingNews">Tweets by BreakingNews</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8">
-	*/
 		</script>
 	</td>
 	</tr>
