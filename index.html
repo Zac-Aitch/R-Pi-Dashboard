@@ -41,7 +41,7 @@
 		<div id="grid">
 			
 			<script type="text/javascript">
-			/*
+			
 			jQuery(document).ready(function($) {
 				function update(){
 			  $.ajax({
@@ -49,9 +49,9 @@
 			  dataType : "jsonp",
 			  success: function(pjson) {
 			  var feels = pjson['current_observation']['feelslike_f'];
-			  var temp_f = pjson['current_observation']['temp_f'];
+			  var weather = pjson['current_observation']['weather'];
 
-			  $('#grid').html(feels);
+			  $('#grid').html(feels + weather);
 			  	}
 
 			  
