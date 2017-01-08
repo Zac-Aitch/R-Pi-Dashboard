@@ -7,7 +7,7 @@ body {
 
 	height: 600px;
 	width: 950px;
-	background-color: black;
+	background-color: red;
 	margin: auto;
 	position: absolute;
 	top: 0;
@@ -20,7 +20,7 @@ body {
 
 	height: 500px;
 	width: 800px;
-	background-color: red;
+	background-color: yellow;
 	margin: auto;
 	position: absolute;
 	top: 0;
