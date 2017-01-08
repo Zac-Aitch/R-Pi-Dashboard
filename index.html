@@ -12,15 +12,23 @@
 <div class="group">
 	<h1 id="greet">
 		<script type="text/javascript">
-		var options = {hour: 'numeric', minute: 'numeric', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-		function update(){
-		var d = new Date();
-		var n = d.toLocaleString('en-US', options);
-		
-		document.getElementById("greet").innerHTML = n;
+		var optionsDay = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+		var optionsTime = {hour: 'numeric', minute: 'numeric'};
+		function updateDay(){
+			var d = new Date();
+			var n = d.toLocaleString('en-US', optionsDay);
+			document.getElementById("greet").innerHTML = n;
 		}	
-		setInterval(update, 100);
-			  update();
+		setInterval(updateDay, 60000);
+			  updateDay();
+
+		funtion updateTime(){
+			var t = new Data();
+			var m = t.toLocaleString('en-US', optionsTime);
+			document.getElementById("greet").innerHTML = m;
+		}
+		setInterval(updateTime, 100);
+		updateTime();
 		</script>
 	</h1>
 <div class ="left">
