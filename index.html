@@ -14,13 +14,13 @@
 		<script type="text/javascript">
 		var optionsDay = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 		var optionsTime = {hour: 'numeric', minute: 'numeric'};
-		function update(){
+		function updateDay(){
 			var d = new Date();
 			var n = d.toLocaleString('en-US', optionsDay);
 			document.getElementById("greet").innerHTML = n;
 		}	
 		setInterval(update, 60000);
-			  update();
+			  updateDay();
 /*
 		function updateTime(){
 			var t = new Date();
