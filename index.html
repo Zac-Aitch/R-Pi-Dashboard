@@ -159,12 +159,13 @@
   		var xmlDoc = xml.responseXML;
   		var predict="<tr><th>Bus</th><th>Minutes</th></tr>";
   		var x = xmlDoc.getElementsByTagName("DIRECTION");
-  		for (i = 0; i <x.length; i++) { 
-    		table += "<tr><td>" +
+  		/*for (i = 0; i <x.length; i++) { 
+    		predict += "<tr><td>" +
     		x[i].getElementsByTagName("VEHICLE")[0].childNodes[0].nodeValue +
     		"</td><td>" +
     		x[i].getElementsByTagName("MINUTES")[0].childNodes[0].nodeValue +
     		"</td></tr>";
+    	*/
   }
   document.getElementById("right").innerHTML = predict;
 }
