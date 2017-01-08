@@ -6,8 +6,8 @@ body {
 
 .container {
 
-	height: 600px;
-	width: 950px;
+	height: 950px;
+	width: 600px;
 	background-color: red;
 	margin: auto;
 	position: absolute;
@@ -19,8 +19,8 @@ body {
 
 .group {
 
-	height: 500px;
-	width: 800px;
+	height: 800px;
+	width: 500px;
 	background-color: yellow;
 	margin: auto;
 	position: absolute;
@@ -41,8 +41,8 @@ body {
 }
 
 .right {
-	height: 250px;
-	width: 400px;
+	height: 400px;
+	width: 250px;
 	
 	float: right;
 	background-color: white;
@@ -89,8 +89,8 @@ div.right p {
 }
 
 #grid {
-	height: 150px;
-	width: 250px;
+	height: 250px;
+	width: 150px;
 	float: left;
 	background-color: blue;
 	color: white;
@@ -117,8 +117,8 @@ td {
 }
 
 .twitter-timeline {
-	height: 200px;
-	width: 100px;
+	height: 100px;
+	width: 200px;
 	margin: auto;
 }
 
