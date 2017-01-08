@@ -152,8 +152,13 @@
 					  dataType : "xml",
 					  success: function(data) {
 					  	console.log(data);
+					  	var xmlDoc = xml.responseXML;
+					  	var bodyNode = xmlDoc.documentElement;
+					  	var predictionsNode = bodyNode.firstChild;
+					  	var directionNode = predictionsNode.firstChild;
+					  	var predictionNode = directionNode.firstChild;
 					  	//var predict = $(xml).find('minutes').text();
-					  	
+					  	$('#bus').html(predictionNode.nodeValue);
 					  	}
 					  });
 					
