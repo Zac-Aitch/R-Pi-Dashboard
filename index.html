@@ -152,9 +152,13 @@
 					  dataType : "xml",
 					  success: function(data) {
 					  	console.log(data);
+					  	var x = xmlDoc.getElementsByTagName('prediction')[0];
+					  	var txt = x.getAttribute('minutes');
 
 					  	/*
 					  	var xmlDoc = xml.responseXML;
+					  	var x = xmlDoc.getElementsByTagName('prediction')[0];
+					  	var txt = x.getAttribute('minutes');
 					  	var bodyNode = xmlDoc.documentElement;
 					  	var predictionsNode = bodyNode.firstChild;
 					  	var directionNode = predictionsNode.firstChild;
@@ -164,6 +168,7 @@
 					  	
 					  	}
 					  });
+					  document.getElementById("right").innerHTML = txt;
 					
 		
 
