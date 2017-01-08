@@ -151,10 +151,10 @@
 					  url : "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=sf-muni&r=1&s=3840",
 					  dataType : "xml",
 					  success: function(data) {
-					  	console.log(data);
+					  	//console.log(data);
 					  	var x = xmlDoc.getElementsByTagName('prediction')[0];
 					  	var txt = x.getAttribute('minutes');
-
+					  	console.log(txt);
 					  	/*
 					  	var xmlDoc = xml.responseXML;
 					  	var x = xmlDoc.getElementsByTagName('prediction')[0];
