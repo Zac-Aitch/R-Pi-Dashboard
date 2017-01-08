@@ -146,8 +146,7 @@
 		<td id ="bus">
 	
 			<script type="text/javascript">
-					jQuery(document).ready(function($) {
-						function predicted(){
+					
 					  $.ajax({
 					  url : "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=sf-muni&r=1&s=3840",
 					  dataType : "xml",
@@ -165,8 +164,7 @@
 					  	$('#bus').html(predictionNode);
 					  	}
 					  });
-					}
-				});
+					
 		
 
 	/*
