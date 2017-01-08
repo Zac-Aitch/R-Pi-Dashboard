@@ -152,8 +152,10 @@
 					  dataType : "xml",
 					  success: function(data) {
 					  	//console.log(data);
+					  	var xmlDoc = xml.responseXML;
 					  	var x = xmlDoc.getElementsByTagName('prediction')[0];
-					  	console.log(x);
+					  	var txt = x.getAttribute('minutes');
+					  	console.log(txt);
 					  	//var txt = x.getAttribute('minutes');
 					  	
 					  	/*
