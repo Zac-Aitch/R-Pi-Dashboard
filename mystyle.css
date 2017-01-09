@@ -10,7 +10,7 @@ body {
 	width: 950px;
 	background-color: red;
 	margin: auto;
-	position: relative;
+	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
