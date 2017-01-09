@@ -22,8 +22,9 @@ body {
 	height: 792px;
 	width: 500px;
 	background-color: yellow;
-	margin: auto;
-	position: absolute;
+	margin: 0 auto;
+	position: relative;
+	padding: 10px;
 	top: 0;
 	bottom: 0;
 	left: 0;
