@@ -1,56 +1,54 @@
-body {
-	padding: 0;
-	margin: 0;
-	background-color: white;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 .container {
 
-	height: 600;
+	height: 600px;
 	width: 1024px;
-	background-color: red;
-	margin: auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	background-color: black;
+	
+
+  	
+	
 }
 
 .group {
 
 	height: 500px;
-	width: 853;
-	background-color: yellow;
-	margin: auto;
-	position: absolute;
+	width: 924px;
+	background-color: black;
+	position: relative;
+  	top: 50px;
+  	left: 50px;
 	
-	top: 0;
-  	right: 0;
-  	bottom: 0;
-  	left: 0;
+
 
 	
 }
-
+/*
 .left {
 	height: 250px;
-	width: 250px;
-	float: left;
-	background-color: green;
+	width: 462px;
+	background-color: blue;
+	position: relative;
+	}
+*/
 	
-}
+
+
+
 
 .right {
-	height: 250px;
-	width: 400px;
+	width: 462px;
+	height: 500px;
+	position: absolute;
+	background-color: black;
+	top: 0;
+	right: 0;
+	text-align: right;
 	
-	float: right;
-	background-color: white;
-	color: white;
-	text-align: center;
-	font-family: 'Catamaran', sans-serif;
-	font-weight: bolder;
 	
 
 }
@@ -64,7 +62,43 @@ h1 {
 	vertical-align: text-top;
 	line-height: 50px;
 }
+#greetTime{
+	font-family: 'Catamaran', sans-serif;
+	text-align: right;
+}
 
+#greet{
+	font-family: 'Catamaran', sans-serif;
+	text-align: right;
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+#greetMonth{
+	font-family: 'Catamaran', sans-serif;
+	text-align: right;
+	position: absolute;
+	top: 85px;
+	right: 0;
+}
+#nextBus{
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	font-family: 'Catamaran', sans-serif;
+	text-align: left;
+	vertical-align: bottom;
+}
+#time{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: 'Catamaran', sans-serif;
+	text-align: left;
+	vertical-align: bottom;
+
+}
+/*
 #richmond {
 	font-family: 'Catamaran', sans-serif;
 	font-weight: bolder;
@@ -88,19 +122,18 @@ div.right p {
 
 
 }
-
+*/
 #grid {
-	height: 150px;
-	width: 250px;
-	float: left;
-	background-color: blue;
-	color: white;
-	text-align: center;
-	line-height: 100px;
-	vertical-align: text-top;
 	font-family: 'Catamaran', sans-serif;
-	font-weight: thin;
-	font-size: 72px;
+	position: absolute;
+	height: 200px;
+	width: 462px;
+	top: 0;
+	left: 0;
+	background-color: black;
+	color: white;
+	font-size: 32px;
+	
 
 }
 table {
