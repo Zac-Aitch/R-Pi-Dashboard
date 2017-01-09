@@ -6,8 +6,8 @@ body {
 
 .container {
 
-	height: 950px;
-	width: 600px;
+	height: 600;
+	width: 950px;
 	background-color: red;
 	margin: auto;
 	position: relative;
@@ -19,8 +19,8 @@ body {
 
 .group {
 
-	height: 792px;
-	width: 500px;
+	height: 500px;
+	width: 792;
 	background-color: yellow;
 	margin: auto;
 	position: absolute;
@@ -42,8 +42,8 @@ body {
 }
 
 .right {
-	height: 400px;
-	width: 250px;
+	height: 250px;
+	width: 400px;
 	
 	float: right;
 	background-color: white;
@@ -90,8 +90,8 @@ div.right p {
 }
 
 #grid {
-	height: 250px;
-	width: 150px;
+	height: 150px;
+	width: 250px;
 	float: left;
 	background-color: blue;
 	color: white;
