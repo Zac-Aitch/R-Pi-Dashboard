@@ -10,7 +10,7 @@ body {
 	width: 600px;
 	background-color: red;
 	margin: auto;
-	position: absolute;
+	position: relative;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -19,16 +19,13 @@ body {
 
 .group {
 
-	height: 792px;
+	height: auto;
 	width: 500px;
 	background-color: yellow;
 	margin: 0 auto;
 	position: relative;
 	padding: 10px;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	
 
 	
 }
