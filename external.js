@@ -57,7 +57,7 @@ function updateMonth(){
 	
 
 					
-function updateTime(){
+function updateBus(){
 	$.ajax({
 	url : "http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=sf-muni&r=1&s=3840",
 	dataType : "xml",
@@ -71,10 +71,10 @@ function updateTime(){
 		}
 	});
 		
-		setInterval(updateTime, 3000);
-		updateTime();
+		setInterval(updateBus, 3000);
+		updateBus();
 	}
 
-		</script>
+</script>
 	
 	
