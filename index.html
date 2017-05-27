@@ -24,7 +24,11 @@
 			  success: function(pjson) {
 			  var feels = pjson['current_observation']['feelslike_f'];
 			  var weather = pjson['current_observation']['weather'];
-
+			  var weatherDisp;
+			  switch(weather){
+			  	case "Rain":
+			  		//use rain cloud icon. For this to work the icon must be in a seperate column div
+			  }
 			  $('#grid').html(feels + "\n" + weather);
 			  	} 
 			  });
