@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Bungee|Catamaran:100,200,300,400,500" rel="stylesheet">
+	<script type="text/javascript" src="Zac-Aitch.github.io/external.js"></script>
 
 </head>
 <body>
@@ -14,30 +15,11 @@
 <!--		<h2 id="richmond"> Richmond District </h2> -->
 		<div id="grid">
 			
-			<script type="text/javascript">
-			
 			jQuery(document).ready(function($) {
-				function update(){
-			  $.ajax({
-			  url : "http://api.wunderground.com/api/e9fecf1aaf8a4e54/conditions/q/CA/San_Francisco.json",
-			  dataType : "jsonp",
-			  success: function(pjson) {
-			  var feels = pjson['current_observation']['feelslike_f'];
-			  var weather = pjson['current_observation']['weather'];
-			  var weatherDisp;
-			  switch(weather){
-			  	case "Rain":
-			  		//use rain cloud icon. For this to work the icon must be in a seperate column div
-			  }
-			  $('#grid').html(feels + "\n" + weather);
-			  	} 
-			  });
-			}
-			  setInterval(update, 600000);
-			  update();
-			});
+			updateWeather()};
+			 
 			
-			</script>
+	
 			
 
 		</div>
