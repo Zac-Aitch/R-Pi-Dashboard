@@ -1,4 +1,4 @@
-#Raspberry Pi Dashboard
+Raspberry Pi Dashboard
 
 This repository contains a simple yet useful dashboard that makes use of the Wunderground Weather and NextBus APIs. The dashboard was initially intended for use in a smart mirror project however it could be used for other applications as well. The information displayed within the dashboard can be easily customized by making slight adjustments to the API calls. 
 
